@@ -1,6 +1,7 @@
 .why-choose-us-section {
     position: relative;
     background: #EFEFF1;
+    overflow: hidden;
   }
   .why-choose-us-section .why-choose-us-text-content {
     position: relative;

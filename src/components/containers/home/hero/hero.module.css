@@ -3,6 +3,7 @@
     position: relative;
     background: #EFEFF1;
     height: 773px;
+    overflow: hidden;
   }
   .hero-banner-wrapper-main{
     position: relative;

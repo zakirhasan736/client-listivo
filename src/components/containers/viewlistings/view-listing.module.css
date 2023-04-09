@@ -1,6 +1,7 @@
 .view-listing-page-wrapper{
     position: relative;
     background: #EFEFF1;
+    overflow: hidden;
 }
   .view-listing-page-wrapper .services-suggestion-wrapper {
     padding-top: 9px;

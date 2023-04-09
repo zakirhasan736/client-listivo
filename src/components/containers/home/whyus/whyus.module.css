@@ -1,6 +1,7 @@
 .why-us-section {
     position: relative;
     padding: 60px 0;
+    overflow: hidden;
   }
 
   .why-us-section .why-us-main-wrapper .why-us-modal-content {

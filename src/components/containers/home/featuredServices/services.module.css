@@ -2,6 +2,7 @@
   position: relative;
   padding: 60px 0;
   background: #f9fafb;
+  overflow: hidden;
 }
 .features-product-main-wrapper .section-main-topbar-box {
   margin-bottom: 60px;
