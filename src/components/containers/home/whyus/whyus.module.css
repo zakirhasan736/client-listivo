@@ -1,0 +1,105 @@
+.why-us-section {
+    position: relative;
+    padding: 60px 0;
+  }
+
+  .why-us-section .why-us-main-wrapper .why-us-modal-content {
+    padding-right: 20px;
+    position: relative;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-modal-content img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .why-us-section .why-us-main-wrapper .why-us-text-content .section-title-box {
+    margin-bottom: 30px;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .section-title-box .pin-text {
+    margin-bottom: 20px;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .section-title-box  .title {
+    text-align: left;
+    max-width: 470px;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .details-list-box {
+    margin-bottom: 30px;
+  }
+  .desc-text {
+    margin-bottom: 30px;
+  }
+
+  .why-us-section .why-us-main-wrapper .why-us-text-content .details-list-box .details-list-items .list-mark-icon {
+    background: var(--yellow-color);
+  }
+
+  .why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data .list-data-items{
+    max-width: 165px;
+    width: 100%;
+  }
+.why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data .list-data-items .list-data-number {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #537CD9;
+  margin-bottom: 13px;
+}
+.why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data .list-data-items .list-data-number .list-data-prefix {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #537CD9;
+  margin-bottom: 0;
+}
+
+.why-us-modal-content .badge-modal-img {
+	position: absolute;
+	right: -20px;
+	bottom: 0;
+	width: 200px !important;
+	height: 228px;
+}
+@media  screen and (min-width:992px) {
+  .why-us-text-content{padding-left: 90px;}
+}
+@media screen and (max-width:991px) {
+  .why-us-section .why-us-main-wrapper .why-us-modal-content{display: none;}
+}
+@media screen and (max-width:767px) {
+  .why-us-section .why-us-main-wrapper .why-us-text-content .section-title-box {
+    text-align: center;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .section-title-box .title {
+    text-align: center;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .why-us-text-content .button-style.sky-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-us-text-content  .desc-text{text-align: center;}
+  .why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data .list-data-items {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .why-us-section .why-us-main-wrapper .why-us-text-content .list-of-data .list-data-items .list-data-number {
+    justify-content: center;
+  }
+}

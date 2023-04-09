@@ -1,0 +1,119 @@
+.features-services-section {
+  position: relative;
+  padding: 60px 0;
+  background: #f9fafb;
+}
+.features-product-main-wrapper .section-main-topbar-box {
+  margin-bottom: 60px;
+}
+
+.features-product-main-wrapper
+  .section-main-topbar-box
+  .topbar-left-cont-box
+  .product-title-box {
+  margin-bottom: 60px;
+}
+.features-product-main-wrapper
+  .section-main-topbar-box
+  .topbar-left-cont-box
+  .product-title-box
+  .pin-text {
+  margin-bottom: 15px;
+}
+.features-product-main-wrapper
+  .section-main-topbar-box
+  .topbar-left-cont-box
+  .product-title-box
+  .title {
+  text-align: left;
+}
+
+/* features card styles here */
+
+.features-card-item {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fdfdfe;
+  border: 1px solid #f2f4f8;
+  border-radius: 0px 0px 5px 5px;
+}
+.features-card-item .card-modal-image {
+  border-radius: 5px 5px 0px 0px;
+}
+.features-card-item .card-modal-image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.features-card-item .card-content-text-box .features-info-box {
+  padding: 20px;
+}
+.features-card-item .card-content-text-box .features-info-box .title {
+  margin-bottom: 15px;
+}
+.features-card-item .card-content-text-box .features-info-box .location {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.features-card-item
+  .card-content-text-box
+  .features-info-box
+  .location
+  .location-icons {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background: var(--secondary-color);
+  border-radius: 50px;
+  color: var(--primary-color);
+  font-size: 15px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-card-item .card-content-text-box .features-act-box {
+  padding: 15px 20px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  border-top: 1px solid #f2f4f8;
+  justify-content: space-between;
+}
+.features-card-item .card-content-text-box .features-act-box .post-act-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.features-card-item
+  .card-content-text-box
+  .features-act-box
+  .post-act-btn
+  .act-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid #d5e3ee;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+.features-card-item .card-content-text-box .features-info-box .product-price {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  letter-spacing: -1px;
+  color: #374b5c;
+  margin-top: 15px;
+}
+.button-style.view-more-button {
+	margin-left: auto;
+}

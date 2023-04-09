@@ -1,0 +1,32 @@
+{
+  "name": "listivojs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "algoliasearch": "^4.17.0",
+    "antd": "^5.4.0",
+    "axios": "^1.3.4",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "firebase": "^9.19.1",
+    "haversine-distance": "^1.2.1",
+    "next": "13.2.4",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-geocode": "^0.2.3",
+    "react-icons": "^4.8.0",
+    "react-instantsearch-dom": "^6.39.1",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.2",
+    "swiper": "^9.2.0",
+    "universal-cookie": "^4.0.4"
+  }
+}

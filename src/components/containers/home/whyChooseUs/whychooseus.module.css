@@ -1,0 +1,72 @@
+.why-choose-us-section {
+    position: relative;
+    background: #EFEFF1;
+  }
+  .why-choose-us-section .why-choose-us-text-content {
+    position: relative;
+    padding: 60px 0;
+  }
+  .why-choose-us-section .why-choose-us-text-content .section-title-box {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  .why-choose-us-section .why-choose-us-text-content .section-title-box .pin-text {
+    margin-bottom: 11px;
+    background: #D5E3EE;
+  }
+  .why-choose-us-section .why-choose-us-text-content .section-title-box .title {
+	margin-bottom: 25px;
+	text-align: left;
+	max-width: 395px;
+}
+.why-choose-us-section .why-choose-us-text-content .section-title-box .desc {
+	max-width: 406px;
+}
+  .why-choose-us-section .why-choose-us-text-content  .details-list-box {
+    margin-bottom: 45px;
+  }
+ .details-list-box .details-list-items {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #374B5C;
+  }
+ .details-list-box .details-list-items:not(:last-child){
+    margin-bottom: 21px;
+  }
+ .details-list-box .details-list-items .list-mark-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    font-size: 16px;
+    border-radius: 50px;
+    background: #D5E3EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why-choose-us-text-content .mark-modal-image {
+	position: absolute;
+	right: 15px;
+	top: 160px;
+}
+@media screen and (max-width:991px) {
+  .why-choose-us-modal-content{display: none;}
+}
+@media screen and (max-width:767px) {
+  .why-choose-us-section .why-choose-us-text-content .section-title-box,
+  .why-choose-us-section .why-choose-us-text-content .section-title-box .title {
+    text-align: center;
+  }
+  .mark-modal-image{display: none;}
+  .why-choose-us-text-content .button-style.button-secondary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 

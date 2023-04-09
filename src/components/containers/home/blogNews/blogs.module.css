@@ -1,0 +1,106 @@
+.blogs-title-box .section-title-box .title {
+  text-align: left;
+}
+.blogs-title-box .section-title-box .pin-text {
+  margin-bottom: 20px;
+}
+
+.blogs-section {
+  position: relative;
+  padding: 60px 0 289px;
+  background-color: #f9fafb;
+}
+
+.blogs-main-wrapper .section-main-topbar-box {
+  margin-bottom: 60px;
+}
+
+/* blogs card styles */
+.blogs-card-items {
+  background: #fdfdfe;
+  border-radius: 5px;
+  position: relative;
+  border-style: solid;
+border-color: #F2F4F8;
+}
+.blogs-card-items .card-modal-img {
+  border-radius: 5px 5px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.blogs-card-items .card-modal-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogs-card-items .blogs-card-text-cont {
+  padding: 45px 46px 80px 46px;
+  position: relative;
+}
+.blogs-card-items .blogs-card-text-cont .title {
+  margin-bottom: 20px;
+}
+.blogs-card-items .blogs-card-text-cont .user-post-info {
+  margin-bottom: 15px;
+}
+.blogs-card-items .blogs-card-text-cont .user-post-info .user-name-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.blogs-card-items
+  .blogs-card-text-cont
+  .user-post-info
+  .user-name-img
+  .users-name {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #73818c;
+  margin: 0;
+}
+.blogs-card-items .blogs-card-text-cont .user-post-info .post-date {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #73818c;
+  gap: 10px;
+}
+.blogs-card-items
+  .blogs-card-text-cont
+  .user-post-info
+  .post-date
+  .calendar-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  font-size: 14px;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #f2f4f8;
+  border-radius: 50px;
+}
+
+.blogs-card-items .blogs-card-text-cont .desc {
+  height: 58px;
+  overflow: hidden;
+}
+@media screen and (max-width:767px) {
+  .blogs-section {
+    padding: 60px 0 190px;
+  }
+  .section-main-topbar-box .topbar-right-cont-box {
+    justify-content: flex-start;
+  }
+}
