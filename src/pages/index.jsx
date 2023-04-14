@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <CustomHead title='Listivo | Home' content='Search for a service is free and easy – it only takes a few simple steps!  Find the best service for your needs.' />
-      <Layout>
+      <Layout baseTheme='primary-theme'>
         <HomeBody />
       </Layout>
     </>

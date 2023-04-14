@@ -5,9 +5,9 @@ import SectionTitle from '@/components/elements/sectionTitle';
 import Button from '@/components/elements/button';
 import SuggestionSlideWidgets from '@/components/elements/suggestionSlideWidgets';
 
-const ServiceSuggestion = () => {
+const ProductSuggestion = () => {
   return (
-    <div className='services-suggestion-wrapper'>
+    <div className='services-suggestion-wrapper product-suggestion-widgets'>
     <div className='custom-container'>
         <div className='section-main-topbar-box'>
             <Row justify='center' align="bottom" gutter={[30, 30]}>
@@ -20,7 +20,7 @@ const ServiceSuggestion = () => {
                 </Col>
                 <Col xxl={9} lg={9} md={6} xs={24}>
                     <div className='topbar-right-cont-box'>
-                        <Button btnText='Start a new search' butVerient='button-secondary' />
+                        <Button btnText='Start a new search' butVerient='sky-button' />
                         <div className='slider-navigation-box'>
                             <button className='navigation-arrow prev-arrow'><icons.AiOutlineArrowLeft /></button>
                             <button className='navigation-arrow next-arrow'><icons.AiOutlineArrowRight /></button>
@@ -32,7 +32,7 @@ const ServiceSuggestion = () => {
     </div>
 
     <div className='service-suggestion-main-wrapper'>
-        <SuggestionSlideWidgets Suggestions='service' />
+        <SuggestionSlideWidgets Suggestions='product' />
     </div>
 
 </div>
@@ -40,4 +40,4 @@ const ServiceSuggestion = () => {
   )
 }
 
-export default ServiceSuggestion
+export default ProductSuggestion

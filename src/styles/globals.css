@@ -12,6 +12,7 @@
   --primary-color: #374b5c;
   --secondary-color: #ff8267;
   --yellow-color: #ffb300;
+  --sky-blue: #537CD9;
 }
 
 body {
@@ -250,6 +251,7 @@ p {
   align-items: center;
   gap: 15px;
 }
+.navigation-arrows,
 .navigation-arrow {
   width: 50px;
   height: 50px;
@@ -263,6 +265,8 @@ p {
   cursor: pointer;
   transition: opacity 350ms ease 0s;
 }
+.navigation-arrows.active,
+.navigation-arrows:hover ,
 .navigation-arrow.active,
 .navigation-arrow:hover {
   opacity: 1;
@@ -335,13 +339,15 @@ p {
     font-size: 12px;
   }
 }
-
+.swiper .navigation-arrows,
 .swiper .navigation-arrow {
   opacity: 1;
 }
+.navigation-arrows.swiper-button-disabled,
 .navigation-arrow.swiper-button-disabled {
   opacity: .15 !important;
 }
+.navigation-arrows.next-arrow,
 .navigation-arrow.next-arrow {
   right: 30px;
   margin-left: auto;

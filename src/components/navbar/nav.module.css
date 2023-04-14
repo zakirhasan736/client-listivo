@@ -15,6 +15,13 @@ header.header-section .header-main-wrapper {
   align-items: center;
   justify-content: space-between;
 }
+.navbar-logo-box .secondary-logo,
+.theme-page-main.secondary-theme .navbar-logo-box .primary-logo {
+  display: none;
+}
+.theme-page-main.secondary-theme .navbar-logo-box .secondary-logo {
+  display: block;
+}
 
 header.header-section .header-main-wrapper .header-nav-content {
   display: flex;
@@ -119,7 +126,10 @@ header.header-section .nav-auth-btn-widgets  .auth-user-btn button.auth-btn {
     height: 100%;
     background: #D5E3EE;
   }
-
+  .theme-page-main.secondary-theme .header-main-wrapper .header-button-content .post-ad-button .button-style.primary-button {
+    background: var(--yellow-color);
+    color: var(--primary-color);
+  }
   @media screen and (max-width:1199px) and (min-width:992px) {
     header.header-section .navbar-nav-box .nav-item-box {
       gap: 20px;

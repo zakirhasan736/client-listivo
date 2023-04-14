@@ -6,6 +6,8 @@ import Image from 'next/image';
 import ServiceSuggestion from '@/components/containers/serviceSuggestion';
 import ProviderServiceSlider from '@/components/containers/viewlistings/providerServiceSlider';
 import FeaturesListing from '@/components/containers/featuresListing';
+import AdsPortal from '@/components/elements/adsPortal';
+import {ServiceAdsPortal} from '@/data/adsPortal';
 
 const ViewListingBody = () => {
     return (
@@ -96,16 +98,9 @@ const ViewListingBody = () => {
                             <div className='provider-info-details'>
 
                                 <div className='provider-contact-info'>
-                                    <div className='ads-widgets-content'>
-                                        <div className='service-ads-modal-image'><Image className='provider-image' src='/image/add-user-img.png' width={60} height={60} alt='service modal image' /> <span className='add-source-icons'><icons.BsFacebook /></span></div>
-                                        <div className='services-ads-content-box'>
-                                            <div className='service-ads-info-text'>
-                                                <h5 className='ads-user-name'>Chen Nathan</h5>
-                                                <p className='member-duration'><span className='tag-title'>Member since:</span> 2 years</p>
-                                            </div>
-                                            <button className='ads-see-all-btn'>See all ads</button>
-                                        </div>
-                                    </div>
+                                    {ServiceAdsPortal.map((items) => (
+                                        <AdsPortal key={items.id} sourceAds={items?.sourceAdd} adsModal={items?.adsModal} adsUserName={items?.adsUserName} duration={items?.duration} TypeAds='service-listing-adds' />
+                                    ))}
                                     <div className='provider-contact-number'>
                                         <span className='call-phone-icons'><icons.HiOutlineDevicePhoneMobile /></span>
                                         <p className='input-nimbers'>431 <span className='hide-number'>* * * * * * * * *</span></p>
@@ -130,7 +125,7 @@ const ViewListingBody = () => {
 
                                 <button className='report-button red-action-report'><span className='alart-icons'><Image src='/image/warning.svg' width={20} height={20} alt="warning icons" /></span> Report abuse</button>
 
-                                <FeaturesListing />
+                                <FeaturesListing listing='service' typesListing='service-features-listing' />
 
                             </div>
                         </Col>

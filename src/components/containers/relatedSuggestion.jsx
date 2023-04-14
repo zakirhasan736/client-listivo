@@ -3,27 +3,27 @@ import { Col, Row } from 'antd'
 import icons from '@/icons';
 import SectionTitle from '@/components/elements/sectionTitle';
 import Button from '@/components/elements/button';
-import SuggestionSlideWidgets from '@/components/elements/suggestionSlideWidgets';
+import UserRelatedSlide from '@/components/elements/userRelatedSlide';
 
-const ServiceSuggestion = () => {
+const RelatedSuggestion = () => {
   return (
-    <div className='services-suggestion-wrapper'>
+    <div className='services-suggestion-wrapper related-suggestion-widgets'>
     <div className='custom-container'>
         <div className='section-main-topbar-box'>
             <Row justify='center' align="bottom" gutter={[30, 30]}>
                 <Col xxl={15} lg={15} md={18} xs={24}>
                     <div className='topbar-left-cont-box'>
                         <div className='blogs-title-box'>
-                            <SectionTitle title='You may also like...' />
+                            <SectionTitle title='More from this user' />
                         </div>
                     </div>
                 </Col>
                 <Col xxl={9} lg={9} md={6} xs={24}>
                     <div className='topbar-right-cont-box'>
-                        <Button btnText='Start a new search' butVerient='button-secondary' />
+                        <Button btnText='Start a new search' butVerient='sky-button' />
                         <div className='slider-navigation-box'>
-                            <button className='navigation-arrow prev-arrow'><icons.AiOutlineArrowLeft /></button>
-                            <button className='navigation-arrow next-arrow'><icons.AiOutlineArrowRight /></button>
+                            <button className='navigation-arrows prev-arrow'><icons.AiOutlineArrowLeft /></button>
+                            <button className='navigation-arrows next-arrow'><icons.AiOutlineArrowRight /></button>
                         </div>
                     </div>
                 </Col>
@@ -32,7 +32,7 @@ const ServiceSuggestion = () => {
     </div>
 
     <div className='service-suggestion-main-wrapper'>
-        <SuggestionSlideWidgets Suggestions='service' />
+        <UserRelatedSlide userRelate='product' />
     </div>
 
 </div>
@@ -40,4 +40,4 @@ const ServiceSuggestion = () => {
   )
 }
 
-export default ServiceSuggestion
+export default RelatedSuggestion

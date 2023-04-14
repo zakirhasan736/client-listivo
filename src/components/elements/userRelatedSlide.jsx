@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FeatureProductData} from '@/data/featureProduct';
-import {FeatureServiceData} from '@/data/featureServices';
+import {RelateProductData,RelateServiceData} from '@/data/userRelateService';
 import Featurescard from '@/components/elements/featurescard';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
-const SuggetionSlideWidgets = ({ Suggestions }) => {
+const UserRelatedSlide = ({ userRelate }) => {
     const [swiperRef, setSwiperRef] = useState(null);
     return (
         <div className='service-suggetion-widgets'>
@@ -22,8 +22,8 @@ const SuggetionSlideWidgets = ({ Suggestions }) => {
                 spaceBetween={30}
 
                 navigation={{
-                    prevEl: '.slider-navigation-box .navigation-arrow.prev-arrow',
-                    nextEl: '.slider-navigation-box .navigation-arrow.next-arrow',
+                    prevEl: '.slider-navigation-box .navigation-arrows.prev-arrow',
+                    nextEl: '.slider-navigation-box .navigation-arrows.next-arrow',
                 }}
                 breakpoints={{
                     "@0.00": {
@@ -52,27 +52,27 @@ const SuggetionSlideWidgets = ({ Suggestions }) => {
                     },
                 }}
                 modules={[Navigation]}
-                className="mySwiper-slide-suggestion"
+                className="mySwipers-slide"
             >
-                {Suggestions === 'service' &&
+                {userRelate === 'service' &&
                     <>
-                        {FeatureServiceData.map((items) => (<SwiperSlide key={items.id}>
+                        {RelateServiceData.map((items) => (<SwiperSlide key={items.id}>
                             <Featurescard id={items?.id} featureImg={items?.featureImg} price={items?.price} featureTitle={items?.featureTitle} serviceLocation={items?.serviceLocation} totalView={items?.totalView} />
                         </SwiperSlide>))}
                     </>
                 }
 
-                {Suggestions === 'product' &&
+                {userRelate === 'product' &&
                     <>
-                        {FeatureProductData.map((items) => (<SwiperSlide key={items?.id}>
+                        {RelateProductData.map((items) => (<SwiperSlide key={items?.id}>
                             <Featurescard id={items?.id} featureImg={items?.featureImg} price={items?.price} featureTitle={items?.featureTitle} serviceLocation={items?.serviceLocation} totalView={items?.totalView} />
                         </SwiperSlide>))}
                     </>
                 }
-          
+               
             </Swiper>
         </div>
     )
 }
 
-export default SuggetionSlideWidgets
+export default UserRelatedSlide

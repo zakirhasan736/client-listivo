@@ -3,18 +3,18 @@ import icons from '@/icons';
 import { Col, Row } from 'antd'
 import Breadcrumb from '@/components/elements/breadcrumb';
 import Image from 'next/image';
-import ServiceSuggestion from '@/components/containers/serviceSuggestion';
-import ProviderServiceSlider from '@/components/containers/viewlistings/providerServiceSlider';
+import ProductSuggestion from '@/components/containers/productSuggestion';
+import RelatedSuggestion from '@/components/containers/relatedSuggestion';
 import FeaturesListing from '@/components/containers/featuresListing';
+import ProviderProductSlider from '@/components/containers/viewlistings/providerProductSlider';
 import AdsPortal from '@/components/elements/adsPortal';
-import {ServiceAdsPortal} from '@/data/adsPortal';
+import {ProductAdsPortal} from '@/data/adsPortal';
 
-const ViewListingDetailsBody = () => {
+const ProductViewListingDetailsBody = () => {
 
     return (
-        <div className='view-listing-page-wrapper'>
+        <div className='view-listing-page-wrapper product-view-listing-wrap'>
             <div className='custom-container'>
-
                 <div className='view-listing-top-box'>
                     <Row gutter={[30, 30]} align='middle'>
                         <Col xxl={15} lg={15} md={18} xs={24}>
@@ -39,7 +39,7 @@ const ViewListingDetailsBody = () => {
                             <div className='provider-service-details'>
                                 <div className='provider-service-main-info'>
                                     <div className='service-overview-modals'>
-                                        <ProviderServiceSlider />
+                                        <ProviderProductSlider />
                                     </div>
                                     <div className='service-details-info'>
                                         <p className='service-provider-name'><span className='user-icon'><icons.BiUser /></span> Claimed</p>
@@ -49,43 +49,22 @@ const ViewListingDetailsBody = () => {
                                         </div>
                                     </div>
                                     <div className='service-title-main'>
-                                        <h2 className='title'>Kothu Labs Niagara Falls</h2>
-                                        <p className='desc'>Where Kothu Rotti Dreams come True!</p>
+                                        <h2 className='title'>City bike</h2>
                                         <ul className='category-list'>
-                                            <li className='category-list-items'> Restaurant</li>
-                                            <li className='category-list-items'>Tamil </li>
+                                            <li className='category-list-items'> Vehicles</li>
+                                            <li className='category-list-items'>Bicycles </li>
                                         </ul>
+
                                     </div>
-                                    <div className='service-location-main'><p className='location-text'><span className='location-icons'><icons.CiLocationOn /></span> 123 Niagara Falls, Ontario, Canada M4G G4E</p> <button className='redirect-to-geo-map'>Get Directions</button></div>
-                                    <ul className='service-tags-list'>
-                                        <li className='service-tags-items'>Available evenings</li>
-                                        <li className='service-tags-items'>Fast-responding</li>
-                                        <li className='service-tags-items'>Free consultation</li>
-                                        <li className='service-tags-items'>Request a Quote</li>
-                                        <li className='service-tags-items'>Speaks English</li>
-                                        <li className='service-tags-items'>Speaks Portuguese</li>
-                                        <li className='service-tags-items'>Speaks Spanish</li>
-                                    </ul>
+                                    <div className='service-location-main'><p className='location-text'><span className='location-icons'><icons.CiLocationOn /></span> New York, NY, USA</p> <button className='redirect-to-geo-map'>See map</button></div>
+                                    <h2 className='price'>$200 <span className='currency'>USD</span></h2>
+
                                 </div>
                                 <div className='provider-service-description'>
                                     <h3 className='title'>Description</h3>
                                     <p className='description'>We are TangibleDesign – a group of developers with experience in managing successful websites and e-commerce shops. We know how hard it is for you or your clients to gain a competitive advantage and we are ready to create the optimum products for the growth of your business in the new age of competition.</p>
                                 </div>
 
-                                <div className='provider-socials-connection'>
-                                    <h3 className='title'>Social Media Connections</h3>
-                                    <ul className='socials-connection-type'>
-                                        <li className='connection-type-link'><span className='mark-icons'><icons.BsCheckLg /></span> Remodeling</li>
-                                        <li className='connection-type-link'><span className='mark-icons'><icons.BsCheckLg /></span> Structural repair</li>
-                                    </ul>
-                                </div>
-
-                                <div className='provider-service-intro-video'>
-                                    <h3 className='title'>Video</h3>
-                                    <div className='video-widgets'>
-                                        <iframe width="656" height="369" src="https://www.youtube.com/embed/Cf8KR1RWuTM" title="video intro" frameborder="0" allow="autoplay; picture-in-picture;"></iframe>
-                                    </div>
-                                </div>
                                 <div className='provider-service-location'>
                                     <h3 className='title'>Location</h3>
                                     <div className='location-widgets'>
@@ -99,10 +78,9 @@ const ViewListingDetailsBody = () => {
                             <div className='provider-info-details'>
 
                                 <div className='provider-contact-info'>
-                                    {ServiceAdsPortal.map((items) => (
-                                        <AdsPortal key={items.id} sourceAds={items?.sourceAdd} adsModal={items?.adsModal} adsUserName={items?.adsUserName} duration={items?.duration} TypeAds='service-listing-adds' />
+                                    {ProductAdsPortal.map((items) => (
+                                        <AdsPortal key={items.id} sourceAds={items?.sourceAdd} adsModal={items?.adsModal} adsUserName={items?.adsUserName} duration={items?.duration} userActivity={items?.userActivity} userGeo={items?.userGeo} TypeAds='product-listing-adds' />
                                     ))}
-
                                     <div className='provider-contact-number'>
                                         <span className='call-phone-icons'><icons.HiOutlineDevicePhoneMobile /></span>
                                         <p className='input-nimbers'>431 <span className='hide-number'>* * * * * * * * *</span></p>
@@ -127,7 +105,7 @@ const ViewListingDetailsBody = () => {
 
                                 <button className='report-button red-action-report'><span className='alart-icons'><Image src='/image/warning.svg' width={20} height={20} alt="warning icons" /></span> Report abuse</button>
 
-                                <FeaturesListing listing='service' typesListing='service-features-listing' />
+                                <FeaturesListing listing='product' typesListing='product-features-listing' />
 
                             </div>
                         </Col>
@@ -135,10 +113,12 @@ const ViewListingDetailsBody = () => {
                 </div>
             </div>
 
-            <ServiceSuggestion />
+            <RelatedSuggestion />
+
+            <ProductSuggestion />
 
         </div>
     )
 }
 
-export default ViewListingDetailsBody
+export default ProductViewListingDetailsBody

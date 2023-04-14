@@ -6,7 +6,7 @@ import { AiOutlineUser, AiOutlinePlus } from "react-icons/ai";
 import { HiBars3 } from "react-icons/hi2"
 import { Drawer, Grid } from 'antd';
 const { useBreakpoint } = Grid;
-function Navbar({ }) {
+function Navbar({}) {
   const screens = useBreakpoint();
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -27,7 +27,10 @@ function Navbar({ }) {
           <div className="header-main-wrapper">
 
             <div className="header-nav-content">
-              <div className="navbar-logo-box"><Logo src='/image/logo_dark-1.svg' Width='112' height='55' alt='header brand logo' /></div>
+              <div className="navbar-logo-box">
+             <Logo logoType='secondary-logo'  src='/image/logo_dark2.png.svg' Width='112' height='55' alt='header brand logo' />
+              <Logo logoType='primary-logo'  src='/image/logo_dark-1.svg' Width='112' height='55' alt='header brand logo' />
+              </div>
               <nav className="navbar-nav-box">
                 <ul className="nav-item-box">
                   <li className="nav-list"><Linked href={'/'} title="Home" /></li>
