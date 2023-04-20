@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Monoton&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Monoton&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@
 }
 
 :root {
-  --font-primary: 'Prompt', sans-serif;
-  --font-secondary: 'Lexend Deca', sans-serif;
+  --font-primary: "Prompt", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
   --primary-color: #374b5c;
   --secondary-color: #ff8267;
   --yellow-color: #ffb300;
-  --sky-blue: #537CD9;
+  --sky-blue: #537cd9;
 }
 
 body {
@@ -43,7 +43,7 @@ h1 {
   letter-spacing: -1px;
   color: #374b5c;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   h1 {
     font-size: 36px;
     line-height: 36px;
@@ -60,7 +60,7 @@ h2 {
   letter-spacing: -1px;
   color: var(--primary-color);
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   h2 {
     font-size: 24px;
     line-height: 24px;
@@ -110,7 +110,7 @@ p {
   padding-right: 30px;
   width: 100%;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .custom-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -155,7 +155,7 @@ p {
   color: var(--primary-color);
 }
 .button-style::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -220,7 +220,7 @@ p {
 
 .section-title-box .pin-text {
   padding: 3px 15px;
-  font-family: 'Lexend Deca';
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -266,7 +266,7 @@ p {
   transition: opacity 350ms ease 0s;
 }
 .navigation-arrows.active,
-.navigation-arrows:hover ,
+.navigation-arrows:hover,
 .navigation-arrow.active,
 .navigation-arrow:hover {
   opacity: 1;
@@ -307,11 +307,11 @@ p {
   position: relative;
 }
 .breadcrumb-items .breadcrumb-list-items:not(:first-child)::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 5px;
   height: 7px;
-  background: url('/image/right-angle.svg');
+  background: url("/image/right-angle.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -334,7 +334,7 @@ p {
   color: #374b5c;
   margin-bottom: 0;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .breadcrumb-items .breadcrumb-list-items a {
     font-size: 12px;
   }
@@ -345,7 +345,7 @@ p {
 }
 .navigation-arrows.swiper-button-disabled,
 .navigation-arrow.swiper-button-disabled {
-  opacity: .15 !important;
+  opacity: 0.15 !important;
 }
 .navigation-arrows.next-arrow,
 .navigation-arrow.next-arrow {
@@ -354,31 +354,11 @@ p {
   margin-right: 0;
 }
 
-
-
 /* navbar styles */
-@import url('../components/navbar/nav.module.css');
-/* hero banner section styles */
-@import url('../components/containers/home/hero/hero.module.css');
-/* why us section styles */
-@import url('../components/containers/home/whyus/whyus.module.css');
-/* why us section styles */
-@import url('../components/containers/home/whyus/whyus.module.css');
-/* why choose us section styles */
-@import url('../components/containers/home/whyChooseUs/whychooseus.module.css');
-/* how its work section styles */
-@import url('../components/containers/home/howItWorks/howitwork.module.css');
-/* features services section styles */
-@import url('../components/containers/home/featuredServices/services.module.css');
-/* features product section styles */
-@import url('../components/containers/home/featuredProducts/product.module.css');
-/* blogs section styles */
-@import url('../components/containers/home/blogNews/blogs.module.css');
-/* cta section styles */
-@import url('../components/containers/home/cta/cta.module.css');
+@import url("../components/navbar/nav.module.css");
 
 /* view listing section styles */
-@import url('../components/containers/viewlistings/view-listing.module.css');
+@import url("../components/containers/viewlistings/view-listing.module.css");
 
 /* footer section styles */
-@import url('../components/footer/footer.module.css');
+@import url("../components/footer/footer.module.css");

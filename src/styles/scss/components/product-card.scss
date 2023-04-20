@@ -1,0 +1,92 @@
+.product-card {
+  width: 100%;
+  background: #fdfdfe;
+  border: 1px solid #f2f4f8;
+  border-radius: 5px;
+  .cover-img {
+    @include bgImage(5px 5px 0px 0px);
+    height: 182px;
+  }
+  .card-content {
+    padding: 21px 21px;
+  }
+  .name {
+    color: $color-black;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1px;
+    @include fontSecondary;
+  }
+  .location-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    .icon {
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-black;
+      background: $color-brand-red;
+      @include anim;
+      svg {
+        height: 12px;
+        width: 12px;
+      }
+    }
+    .address {
+      color: $color-black-2;
+      font-size: 14px;
+      line-height: 24px;
+      @include fontSecondary;
+    }
+  }
+  .price {
+    @include fontSecondary;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+  }
+  .card-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f2f4f8;
+    padding: 16px 20px;
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      .action {
+        height: 35px;
+        width: 35px;
+        min-width: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #d5e3ee;
+        color: $color-black;
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+    .views {
+      font-size: 13px;
+      line-height: 14px;
+      color: $color-black-2;
+      @include fontSecondary;
+    }
+  }
+}

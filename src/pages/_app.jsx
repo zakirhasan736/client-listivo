@@ -1,16 +1,18 @@
-import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
-import { Router } from 'next/router';
-import { useEffect, useState } from '@packages/packages';
-import Loader from './loader';
+// CSS
+import "@/styles/globals.css";
+import "@/styles/scss/index.scss";
+import Head from "next/head";
+import Script from "next/script";
+import { Router } from "next/router";
+import { useEffect, useState } from "@packages/packages";
+import Loader from "./loader";
 import Geocode from "react-geocode";
 import { ToastContainer } from "react-toastify";
-import { Provider } from "react-redux"
-import store from '@/stores/store';
-
+import "react-toastify/dist/ReactToastify.css";
+import { Provider } from "react-redux";
+import store from "@/store";
 
 export default function App({ Component, pageProps }) {
-
   const [loading, setLoading] = useState(false);
 
   Geocode.setApiKey(process.env.NEXT_PUBLIC_GEO_API_KEY);
@@ -29,8 +31,16 @@ export default function App({ Component, pageProps }) {
       Router.events.off("routeChangeError", stopLoading);
     };
   }, []);
+
   return (
     <>
+      <>
+        {/* react-places-autocomplete | Google map api*/}
+        <Script
+          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GEO_API_KEY}&libraries=places`}
+          strategy="beforeInteractive"
+        />
+      </>
       {loading && <Loader />}
       <ToastContainer
         autoClose={6000}
@@ -41,7 +51,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </Provider>
     </>
-  )
+  );
 }
-
-

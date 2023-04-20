@@ -1,0 +1,57 @@
+@import "../../views/Home/Hero/hero.module.css";
+@import url("../../views/Home/HowItWorks/howitwork.module.css");
+@import url("../../views/Home/WhyChooseUs/whychooseus.module.css");
+@import url("../../views/Home/FeaturesServices/services.module.css");
+@import url("../../views/Home/WhyUs/whyus.module.css");
+@import url("../../views/Home/FeaturesProduct/product.module.css");
+@import url("../../views/Home/BlogNews/blogs.module.css");
+@import url("../../views/Home/CtaWidgets/cta.module.css");
+
+.features-services-content-wrap {
+  .ais-Hits {
+    .ais-Hits-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 15px;
+      margin: 0;
+      padding: 0;
+      @include media("<=large") {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include media("<=desktop") {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media("<=phoneH") {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      @include media("<=phone") {
+      }
+      .ais-Hits-item {
+        width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.placeholders-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin: 0;
+  padding: 0;
+  @include media("<=large") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media("<=desktop") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media("<=phoneH") {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  @include media("<=phone") {
+  }
+}
